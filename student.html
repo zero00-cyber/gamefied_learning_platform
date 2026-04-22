@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO / MOTIVATION SECTION -->
+<div class="hero-student">
+
+  <h1>🧠 Welcome, Adventurer!</h1>
+
+  <p class="motivation">
+    “Every question you solve opens a new gate.  
+    Every mistake is a hidden lesson waiting to be unlocked.” ⚔️
+  </p>
+
+  <p class="sub-motivation">
+    Enter the world of challenges, XP, traps, and knowledge quests 🚪✨
+  </p>
+
+</div>
+
+<!-- LOGIN + DASHBOARD WRAPPER -->
+<div class="student-container">
+
+  <!-- LOGIN CARD -->
+  <div id="loginBox" class="card">
+
+    <h2>🔐 Enter the Portal</h2>
+
+    <input id="username" placeholder="Enter Username">
+    <input id="password" type="password" placeholder="Enter Password">
+
+    <button onclick="loginStudent()">Enter Adventure</button>
+
+  </div>
+
+  <!-- DASHBOARD CARD -->
+  <div id="dashboard" class="card hidden">
+
+    <h2>🎮 Adventure Dashboard</h2>
+
+    <p id="xp">XP: 0</p>
+
+    <p class="hint">
+      Ready to unlock your first gate?
+    </p>
+
+    <button onclick="startQuiz()">🚪 Start Quest</button>
+
+    <button onclick="logout()">Logout</button>
+
+  </div>
+
+</div>
+
+<!-- QUIZ -->
+<div id="quizBox" class="page hidden">
+
+  <h2 id="gameStatus">🚪 Gate 1</h2>
+
+  <p id="question"></p>
+
+  <div id="options"></div>
+
+  <button onclick="submitAnswer()">Submit Answer</button>
+
+</div>
+
+<!-- RESULT -->
+<div id="resultBox" class="page hidden">
+  <h2 id="resultText"></h2>
+  <button onclick="nextQuestion()">Continue</button>
+</div>
+
+<script src="student.js"></script>
+</body>
+</html>
