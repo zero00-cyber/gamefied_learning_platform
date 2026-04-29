@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mission Game</title>
+  <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="game-top">
+  <div id="lives">❤️ 5</div>
+  <div id="streak">🔥 0</div>
+</div>
+
+<!-- MAIN GAME BOX -->
+<div class="page">
+
+  <!-- QUESTION -->
+  <div id="question">Loading question...</div>
+
+  <!-- MCQ -->
+  <div id="options"></div>
+
+  <!-- Drag & Drop -->
+  <div id="dragArea" class="hidden"></div>
+
+  <!-- Fill Code -->
+  <div id="codeArea" class="hidden"></div>
+
+  <!-- Arrange Steps -->
+  <div id="arrangeArea" class="hidden"></div>
+
+  <!-- Timer -->
+  <div id="timerBox" class="hidden">
+    ⏱️ <span id="timer">10</span>
+  </div>
+
+  <!-- SUBMIT -->
+  <button class="submit-btn" onclick="submitAnswer()">Submit</button>
+
+</div>
+
+<!-- FEEDBACK -->
+<div id="feedbackBox" class="feedback hidden"></div>
+
+<!-- IMPORTANT: ORDER MATTERS -->
+<script src="gameEngine.js"></script>
+<script src="bossBattle.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>

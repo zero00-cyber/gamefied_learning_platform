@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+
+  <!-- LEFT PROFILE PANEL -->
+  <div class="profile-panel">
+    <img src="https://via.placeholder.com/90" class="profile-pic">
+
+    <h2 id="studentName">Hi, Student 👋</h2>
+
+    <div class="stats">
+      <p>⭐ XP: <span id="xp">0</span></p>
+      <p>🪙 Coins: <span id="coins">0</span></p> 
+      <p>🔥 Streak: <span id="streak">0</span></p>
+      <p>🎓 Completed: <span id="completed">0</span></p>
+    </div>
+  </div>
+
+  <!-- CENTER COURSES -->
+  <div class="courses-section">
+
+    <h2 class="heading">🎮 Choose Your Course</h2>
+
+    <div class="course-container">
+
+      <div class="course-box" onclick="openCourse('C Programming')">
+
+        <h3>C Programming</h3>
+        <p>Learn basics of C and memory concepts</p>
+
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="c-progress"></div>
+        </div>
+        <span class="progress-text" id="c-text">0%</span>
+
+      </div>
+
+      <div class="course-box" onclick="openCourse('Java')">
+        <h3>Java</h3>
+        <p>Object-oriented programming fundamentals</p>
+
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="java-progress"></div>
+        </div>
+        <span class="progress-text" id="java-text">0%</span>
+      </div>
+
+      <div class="course-box" onclick="openCourse('Python')">
+        <h3>Python</h3>
+        <p>Easy syntax and powerful scripting</p>
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="python-progress"></div>
+        </div>
+        <span class="progress-text" id="python-text">0%</span>
+      </div>
+
+      <div class="course-box" onclick="openCourse('JavaScript')">
+        <h3>JavaScript</h3>
+        <p>Web interactivity and dynamic UI</p>
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="javaScript-progress"></div>
+        </div>
+        <span class="progress-text" id="javaScript-text">0%</span>
+      </div>
+
+      <div class="course-box" onclick="openCourse('Data Structures')">
+        <h3>Data Structures</h3>
+        <p>Arrays, stacks, queues and trees</p>
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="dataStructures-progress"></div>
+        </div>
+        <span class="progress-text" id="ds-text">0%</span>
+      </div>
+
+      <div class="course-box" onclick="openCourse('Algorithms')">
+        <h3>Algorithms</h3>
+        <p>Problem solving and optimization</p>
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="algorithms-progress"></div>
+        </div>
+        <span class="progress-text" id="algorithms-text">0%</span>
+      </div>
+
+      <div class="course-box" onclick="openCourse('DBMS')">
+        <h3>DBMS</h3>
+        <p>Database design and SQL queries</p>
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="dbms-progress"></div>
+        </div>
+        <span class="progress-text" id="dbms-text">0%</span>
+      </div>
+
+      <div class="course-box" onclick="openCourse('HTML')">
+        <h3>HTML</h3>
+        <p>Structure and content of Webpage</p>
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="html-progress"></div>
+        </div>
+        <span class="progress-text" id="html-text">0%</span>
+      </div>
+
+      <div class="course-box" onclick="openCourse('CSS')">
+        <h3>CSS</h3>
+        <p>Style design and Layout of Webpage</p>
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+        <div class="progress" style="width: 0%;" id="css-progress"></div>
+        </div>
+        <span class="progress-text" id="css-text">0%</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<script src="student.js"></script>
+</body>
+</html>
