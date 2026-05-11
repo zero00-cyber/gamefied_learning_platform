@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Question</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="add-question-container">
+
+  <h2>➕ Add Question</h2>
+
+  <p id="selectedCourse"></p>
+
+  <input type="number" id="missionId" placeholder="Mission ID">
+
+  <input type="text" id="question" placeholder="Question">
+
+  <input type="text" id="optA" placeholder="Option A">
+  <input type="text" id="optB" placeholder="Option B">
+  <input type="text" id="optC" placeholder="Option C">
+  <input type="text" id="optD" placeholder="Option D">
+
+  <input type="text" id="answer" placeholder="Correct Answer">
+
+  <button onclick="saveQuestion()">Save Question</button>
+
+  <button onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script src="addQuestion.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mission Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔙 BACK -->
+<button onclick="goBack()" style="margin:10px;">⬅ Back</button>
+
+<!-- TOP BAR -->
+<div class="game-top">
+  <div id="lives">❤️ 5</div>
+  <div id="streak">🔥 0</div>
+</div>
+
+<!-- MAIN GAME BOX -->
+<div class="page">
+
+  <!-- QUESTION -->
+  <div id="question">Loading question...</div>
+
+  <!-- MCQ OPTIONS -->
+  <div id="options"></div>
+
+  <!-- FUTURE FEATURES (kept hidden) -->
+  <div id="dragArea" class="hidden"></div>
+  <div id="codeArea" class="hidden"></div>
+  <div id="arrangeArea" class="hidden"></div>
+
+  <!-- TIMER -->
+  <div id="timerBox" class="hidden">
+    ⏱️ <span id="timer">10</span>
+  </div>
+
+  <!-- SUBMIT -->
+  <button class="submit-btn" onclick="submitAnswers()">Submit</button>
+
+</div>
+
+<!-- RESULT -->
+<div id="feedbackBox" class="feedback hidden"></div>
+
+<!-- SCRIPTS -->
+<script src="gameEngine.js"></script>
+<script src="bossBattle.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>

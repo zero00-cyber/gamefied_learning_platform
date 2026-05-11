@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Questions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="heading">📝 Manage Questions</h2>
+
+
+
+
+
+
+
+<div class="top-section">
+
+  <!-- ADD QUESTION -->
+  <div class="add-form">
+    <h3>➕ Add New Question</h3>
+
+    <input type="text" id="questionText" placeholder="Enter question">
+
+    <select id="questionCourse">
+      <option value="C Programming">C Programming</option>
+      <option value="Java">Java</option>
+      <option value="Python">Python</option>
+    </select>
+
+    <select id="questionDifficulty">
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+
+    <button onclick="addQuestion()">Add Question</button>
+  </div>
+
+  <!-- SEARCH + FILTER -->
+  <div class="filter-box">
+    <h3>🔍 Search & Filter Questions</h3>
+
+    <input type="text" id="searchInput" placeholder="Search question...">
+
+    <select id="courseFilter">
+      <option value="">All Courses</option>
+      <option value="C Programming">C Programming</option>
+      <option value="Java">Java</option>
+      <option value="Python">Python</option>
+    </select>
+
+    <select id="difficultyFilter">
+      <option value="">All Difficulty</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+
+    <button onclick="applyFilters()">Apply Filters</button>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- QUESTIONS LIST -->
+<div id="questionsContainer" class="questions-container"></div>
+
+<script src="manageQuestions.js"></script>
+
+</body>
+</html>
